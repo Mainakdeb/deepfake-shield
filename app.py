@@ -125,6 +125,8 @@ ARTICLE = '''
 Deep shield helps you detect deepfakes in an image.
 '''
 examples = [
+    ['examples/yaron_fake.png'],
+    ['examples/adi_fake.png'],
     ['examples/fake_2.jpg'],
     ['examples/donald_bean_2.jpg'],
 
