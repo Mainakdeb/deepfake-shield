@@ -75,8 +75,8 @@ class SingleResult():
         self.image = image 
         self.result = 'fake: '+ str(score*100)[:5] + '%' 
         self.filename = '__temp__.jpg'
-        self.fontsize  = 37
-        self.height , self.width = 300, 680
+        self.fontsize  = 42
+        self.height , self.width = 300, 660
 
     def get_image(self):
         fig, ax =  plt.subplots(1,2, figsize = (10,5))
@@ -120,22 +120,21 @@ def predict_func_gradio(input_image):
                           scores=s['scores'])
     return(ret)
 
-ARTICLE = '''
-# How it works
-Deep shield helps you detect deepfakes in an image.
-'''
+
 examples = [
     ['examples/adi_fake.png'],
     ['examples/donald_bean_2.jpg'],
     ['examples/yaron_fake.png'],
-    ['examples/fake_2.jpg']
 ]
+
+ARTICLE = ''
 
 iface = gr.Interface(
     predict_func_gradio, 
     gr.inputs.Image(image_mode="RGB"),
     [gr.outputs.Image(label="Results")],
     title="Deepfake-Shield",
+    description=None,
     layout="horizontal",
     examples = examples,
     allow_flagging=False,
