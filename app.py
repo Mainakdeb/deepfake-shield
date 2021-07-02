@@ -140,7 +140,8 @@ iface = gr.Interface(
     layout="horizontal",
     examples = examples,
     allow_flagging=False,
-    article = ARTICLE
+    article = ARTICLE,
+    theme = "dark"
 )
 
 iface.launch(debug=True)
