@@ -1,1 +1,1 @@
-# deepfake-shield
+![](/assets/deepfake-shield-banner-wide.png)
