@@ -125,18 +125,17 @@ ARTICLE = '''
 Deep shield helps you detect deepfakes in an image.
 '''
 examples = [
-    ['examples/yaron_fake.png'],
     ['examples/adi_fake.png'],
-    ['examples/fake_2.jpg'],
     ['examples/donald_bean_2.jpg'],
-
+    ['examples/yaron_fake.png'],
+    ['examples/fake_2.jpg']
 ]
 
 iface = gr.Interface(
     predict_func_gradio, 
     gr.inputs.Image(image_mode="RGB"),
     [gr.outputs.Image(label="Results")],
-    title="Deep-Shield",
+    title="Deepfake-Shield",
     layout="horizontal",
     examples = examples,
     allow_flagging=False,
