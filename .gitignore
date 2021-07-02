@@ -1,3 +1,4 @@
 env-deepfake-shield/
 __pycache__/
 .vscode/
+__temp__.jpg
