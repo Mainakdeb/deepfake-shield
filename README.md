@@ -21,3 +21,9 @@ Finding suitable training hyperparameters manually can be quite tedious. We have
 ![](/assets/mlrun_util_grid_search.png)
 ### 4.3 Training and Evaluation pipeline using MLRun
 ![](/assets/mlrun_util_train.png)
+
+## Instructions - Data Preprocessing and Training
+We have published the notebooks that we used to train our model, refer to the links below.
+* Data Preprocessing notebook - [NBViewer](https://nbviewer.jupyter.org/github/Mainakdeb/deepfake-shield/blob/main/notebooks/preprocess_and_explore_data.ipynb), [Github](https://github.com/Mainakdeb/deepfake-shield/blob/main/notebooks/preprocess_and_explore_data.ipynb)
+* Training notebook - [NBViewer](https://nbviewer.jupyter.org/github/Mainakdeb/deepfake-shield/blob/main/notebooks/train_deep_shield_model.ipynb), [Github](https://github.com/Mainakdeb/deepfake-shield/blob/main/notebooks/train_deep_shield_model.ipynb)
+* We've used a [modified version](https://www.kaggle.com/unkownhihi/deepfake) of the [deepfake-detection-challenge](https://www.kaggle.com/c/deepfake-detection-challenge) dataset from kaggle
