@@ -59,6 +59,7 @@ pip install -r requirements.txt
 ```
 python3 app.py
 ```
+  
 
 ## 📗 Resources
 We have published the notebooks that we used to train our model, refer to the links below.
