@@ -31,8 +31,13 @@ Finding suitable training hyperparameters manually can be quite tedious. We auto
 
 ### 4.3 💡 Training + Evaluation 
 
-The model was trained using the ideal hyperparameters found using grid search. The training and evaluatoion logs were tracked using `mlrun`
+The pipeline that we built comprises of 2 different models:
+* We use a pretrained [BlazeFace](https://github.com/hollance/BlazeFace-PyTorch) model (which can be retrained if needed) for extracting faces from images.
+* We trained a customized implementation of EfficientNet for classsifying the extracted faces accordingly. 
 
+The model was trained using the ideal hyperparameters found using grid-search with `mlrun`. The training and evaluatoion logs were also tracked using `mlrun`
+
+![](/assets/pred_pipeline.png)
 ![](/assets/mlrun_util_train.png)
 
 ## 📦 Running locally
