@@ -1,4 +1,5 @@
-![](/assets/deepfake-shield-banner-wide.png)
+<img src="https://raw.githubusercontent.com/Mainakdeb/deepfake-shield/main/assets/deepfake-shield-banner-wide.png">
+
 [![](https://img.shields.io/badge/heroku-deployed-green)](https://deepfake-shield.herokuapp.com/)
 
 ## 1. :performing_arts: What is a Deepfake?
@@ -10,7 +11,8 @@ It is easier than ever to create deepfakes of anyone using the tools available o
 ## 3. :dart: Our Solution
 Deepfake Shield is a tool that uses deep-learning to detect deepfakes in an image. The diagram below summarises our project. Feel free to try out the web-app - https://deepfake-shield.herokuapp.com/
 
-![](/assets/summary.png)
+<img src="https://raw.githubusercontent.com/Mainakdeb/deepfake-shield/main/assets/summary.png">
+
 
 ## 4. 🧙‍♂️ Making the most out of MLRun 
 
@@ -21,13 +23,12 @@ Our favourite way to use `mlrun` has been the `# mlrun: start-code` and  `# mlru
 
 When preprocessing the data, `mlrun.artifacts.PlotArtifacts` helped us visualise a bias in the dataset. We found that the number of real images is much lower than that of the number of fake images. This was fixed by inflating the number of real faces using the [FFHQ dataset](https://github.com/NVlabs/ffhq-dataset)
 
-![](/assets/mlrun_util_preprocessing.png)
+<img src="https://raw.githubusercontent.com/Mainakdeb/deepfake-shield/main/assets/mlrun_util_preprocessing.png">
 
 ### 4.2 🔬 Automated Hyperparameter Search
 Finding suitable training hyperparameters manually can be quite tedious. We automated this process using `mlrun.new_task().with_hyper_params(grid_params, selector="min.loss")`, thus making the process of finding hyperparameters a lot less painful.
 
-![](/assets/mlrun_util_grid_search.png)
-
+<img src="https://raw.githubusercontent.com/Mainakdeb/deepfake-shield/main/assets/mlrun_util_grid_search.png">
 
 ### 4.3 💡 Training + Evaluation 
 
@@ -37,8 +38,10 @@ The pipeline that we built comprises of 2 different models:
 
 The model was trained using the ideal hyperparameters found using grid-search with `mlrun`. The training and evaluation logs were also tracked using `mlrun`
 
-![](/assets/pred_pipeline.png)
-![](/assets/mlrun_util_train.png)
+<img src="https://raw.githubusercontent.com/Mainakdeb/deepfake-shield/main/assets/pred_pipeline.png">
+
+<img src="https://raw.githubusercontent.com/Mainakdeb/deepfake-shield/main/assets/mlrun_util_train.png">
+
 
 ## 📦 Running locally
 
