@@ -127,7 +127,9 @@ examples = [
     ['examples/yaron_fake.png'],
 ]
 
-ARTICLE = ''
+
+ARTICLE = 'https://raw.githubusercontent.com/Mainakdeb/deepfake-shield/main/article.md'
+
 
 iface = gr.Interface(
     predict_func_gradio, 
