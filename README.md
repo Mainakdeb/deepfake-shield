@@ -46,7 +46,7 @@ The webapp can be run locally with the following steps:
 1. Clone the repo and naviigate into the folder 
 
   ```
-  git clone https://github.com/Mainakdeb/deepfake-shield.git`
+  git clone https://github.com/Mainakdeb/deepfake-shield.git
   ```
 
 ```
@@ -67,8 +67,8 @@ python3 app.py
   
 
 ## 📗 Resources
-We have published the notebooks that we used to train our model, refer to the links below.
 
 * **Data exploration**: - [NBViewer](https://nbviewer.jupyter.org/github/Mainakdeb/deepfake-shield/blob/main/notebooks/preprocess_and_explore_data.ipynb), [Github](https://github.com/Mainakdeb/deepfake-shield/blob/main/notebooks/preprocess_and_explore_data.ipynb)
-* **Preprocessing + Training + Evaluation**: - [NBViewer](https://nbviewer.jupyter.org/github/Mainakdeb/deepfake-shield/blob/main/notebooks/train_deep_shield_model.ipynb), [Github](https://github.com/Mainakdeb/deepfake-shield/blob/main/notebooks/train_deep_shield_model.ipynb)
+* **Preprocessing + Hyperparameter search**: - [NBViewer](https://nbviewer.jupyter.org/github/Mainakdeb/deepfake-shield/blob/main/notebooks/train_deep_shield_model.ipynb), [Github](https://github.com/Mainakdeb/deepfake-shield/blob/main/notebooks/train_deep_shield_model.ipynb)
+* **Training + Evaluation**: [NBViewer]() [Github]()
 * **Dataset**: We've used a [modified version](https://www.kaggle.com/unkownhihi/deepfake) of the [deepfake-detection-challenge](https://www.kaggle.com/c/deepfake-detection-challenge) dataset.
